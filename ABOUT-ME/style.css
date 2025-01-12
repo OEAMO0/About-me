@@ -1,0 +1,612 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo 2", serif;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  line-height: 1.6; /* تحسين التباعد بين الأسطر */
+}
+
+/* رأس الصفحة */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; /* تعديل ليتناسب مع الشاشات الصغيرة */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+.header h1 > span {
+  color: red;
+}
+
+.navber ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navber ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem; /* تحسين حجم النص في الروابط */
+}
+
+/* المحتوى */
+.main {
+  padding: 2rem 1rem;
+  direction: rtl;
+}
+
+.about-me {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text-about-me {
+  font-size: 2.5rem;
+}
+
+.text-about-me span {
+  color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.who-am-i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: row-reverse;
+}
+
+.reason-for-coding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: row;
+}
+
+.who-am-i h3 > span,
+.reason-for-coding h3 > span {
+  color: red;
+}
+
+.desc {
+  width: 100%;
+  max-width: 350px; /* تحسين العرض للنصوص */
+}
+
+.desc h3 {
+  font-size: 1.6rem;
+}
+
+.desc p {
+  font-size: 1rem;
+}
+
+.desc p span {
+  color: red;
+  font-weight: bold;
+}
+
+.images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.images img {
+  width: 100%;
+  max-width: 250px; /* تحديد أقصى عرض للصورة */
+  filter: brightness(0.7);
+}
+
+.My-skills {
+  text-align: center;
+  direction: ltr;
+}
+
+.text-My-skills {
+  font-size: 2rem;
+}
+
+.text-My-skills span {
+  font-size: 2rem;
+  color: red;
+}
+
+.coding {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.HTML {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  border-radius: 1rem;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease;
+}
+
+.HTML:hover {
+  transform: translateY(-15px);
+}
+
+.HTML h4 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.7;
+}
+
+.HTML img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ln {
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 80%;
+  height: 10px;
+}
+
+.line {
+  border-radius: 3px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.len {
+  border-radius: 3px;
+  background-color: blue;
+  width: 95%;
+  height: 100%;
+  animation: len 6s ease infinite;
+}
+
+.CSS {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  border-radius: 1rem;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease;
+}
+
+.CSS:hover {
+  transform: translateY(-15px);
+}
+
+.CSS h4 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.7;
+}
+
+.CSS img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ln1 {
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 80%;
+  height: 10px;
+}
+
+.line1 {
+  border-radius: 3px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.len1 {
+  border-radius: 3px;
+  background-color: blue;
+  width: 70%;
+  height: 100%;
+  animation: len1 4s ease infinite;
+}
+
+.JS {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  border-radius: 1rem;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease;
+}
+
+.JS:hover {
+  transform: translateY(-15px);
+}
+
+.JS h4 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.7;
+}
+
+.JS img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.ln2 {
+  border-radius: 3px;
+  margin-top: 20px;
+  width: 80%;
+  height: 10px;
+}
+
+.line2 {
+  border-radius: 3px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.len2 {
+  border-radius: 3px;
+  background-color: blue;
+  width: 20%;
+  height: 100%;
+  animation: len2 2s ease infinite;
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+    padding: 0 1rem;
+  }
+
+  .main {
+    padding: 1.5rem 1rem;
+  }
+
+  .text-about-me {
+    font-size: 2rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .who-am-i {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .reason-for-coding {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .desc {
+    width: 90%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .desc h3 {
+    font-size: 1.4rem;
+  }
+
+  .desc p {
+    font-size: 1rem;
+  }
+
+  .images img {
+    width: 80%;
+    max-width: 200px;
+  }
+
+  .coding {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .HTML,
+  .CSS,
+  .JS {
+    width: 150px;
+    height: 200px;
+  }
+
+  .HTML h4,
+  .CSS h4,
+  .JS h4 {
+    font-size: 1rem;
+  }
+
+  .ln,
+  .ln1,
+  .ln2 {
+    width: 70%;
+    height: 8px;
+  }
+
+  .line,
+  .line1,
+  .line2 {
+    height: 100%;
+  }
+
+  .len,
+  .len1,
+  .len2 {
+    height: 100%;
+  }
+
+  /* Adjust font sizes and container layouts */
+  .text-My-skills {
+    font-size: 1.8rem;
+  }
+
+  .text-about-me span,
+  .text-My-skills span {
+    font-size: 1.6rem;
+    color: red;
+  }
+}
+
+@media (max-width: 800px) {
+  /* تعديل القسم about-me */
+  .about-me {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .text-about-me {
+    font-size: 2rem; /* تصغير حجم النص */
+    margin-bottom: 20px; /* إضافة مسافة أسفل النص */
+    width: 100%;
+    max-width: 350px; /* تحديد أقصى عرض للنص */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-about-me span {
+    font-size: 2rem;
+    color: red;
+  }
+
+  /* تحسين تنسيق الصور داخل "عنّي" */
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* إضافة مسافة بين الصور */
+    flex-wrap: wrap;
+    margin-top: 20px; /* إضافة مسافة من أعلى الصور */
+  }
+
+  .images img {
+    width: 100%;
+    max-width: 200px; /* تحديد أقصى عرض للصورة */
+    height: auto;
+    filter: brightness(0.7);
+    margin-bottom: 10px; /* إضافة مسافة أسفل الصور */
+  }
+
+  /* تحسين تنسيق "من أنا؟" */
+  .who-am-i {
+    flex-direction: column-reverse; /* ترتيب العناصر عموديًا */
+    gap: 20px;
+    width: 100%; /* التأكد من أن العرض لا يتجاوز 100% */
+    padding: 0 10px; /* إضافة هوامش جانبية */
+  }
+
+  .desc {
+    width: 100%;
+    max-width: 350px; /* تحديد أقصى عرض للنص */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+
+  .desc h3 {
+    font-size: 1.4rem; /* تصغير حجم العنوان */
+  }
+
+  .desc p {
+    font-size: 1rem; /* تصغير حجم النص */
+  }
+
+  /* تقليل مساحة عناصر المهارات */
+  .coding {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .HTML,
+  .CSS,
+  .JS {
+    width: 150px;
+    height: 200px;
+    max-width: 100%; /* تأكد من أن العناصر لا تتمدد أكثر من اللازم */
+  }
+
+  .HTML h4,
+  .CSS h4,
+  .JS h4 {
+    font-size: 1rem;
+  }
+
+  .ln,
+  .ln1,
+  .ln2 {
+    width: 70%;
+  }
+
+  .line,
+  .line1,
+  .line2 {
+    height: 100%;
+  }
+
+  .len,
+  .len1,
+  .len2 {
+    height: 100%;
+
+  }
+
+  /* تحسين النصوص في .text-My-skills */
+  .text-My-skills {
+    font-size: 1.8rem;
+  }
+
+  .text-about-me span,
+  .text-My-skills span {
+    font-size: 1.6rem;
+    color: red;
+  }
+}
+
+@keyframes len {
+  0% {
+    width: 0%;
+  }
+
+  25% {
+    width: 23.75%;
+  }
+
+  50% {
+    width: 47.5%;
+  }
+
+  75% {
+    width: 71.25%;
+  }
+
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes len1 {
+  0% {
+    width: 0%; /* يبدأ العرض من 0% */
+  }
+
+  25% {
+    width: 17.5%; /* عند 25% من الحركة، العرض يصبح 17.5% */
+  }
+
+  50% {
+    width: 35%; /* عند 50% من الحركة، العرض يصبح 35% */
+  }
+
+  75% {
+    width: 52.5%; /* عند 75% من الحركة، العرض يصبح 52.5% */
+  }
+
+  100% {
+    width: 70%; /* عند 100% من الحركة، العرض يصبح 70% */
+  }
+}
+
+@keyframes len2 {
+  0% {
+    width: 0%;
+  }
+
+  25% {
+    width: 5%;
+  }
+
+  50% {
+    width: 10%;
+  }
+
+  75% {
+    width: 15%;
+  }
+
+  100% {
+    width: 20%;
+  }
+}
